@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <nav class="flex bg-black">
+        <div class="logo flex">
+            <img class="invert" id="main_logo_spotify" src="logo.svg" alt="Spotify Logo">
+        </div>
+        <ul class="flex">
+            <li><img class="invert home_button" src="home.svg" alt="home"></li>
+            <div class="search_bar flex">
+                <img class="" src="search.svg" alt="search">
+                <input class="bg-grey" type="text" name="search_bar" id="search_bar"
+                    placeholder="What do you want to play?">
+            </div>
+        </ul>
+        <div class="nav_right flex">
+            <button class="premium">Explore Premium</button>
+            <button class="bell_icon"><img src="bell.svg" alt="Bell Icon"></button>
+            <button class="people_logo"><img src="people.svg" alt="Profile"></button>
+        </div>
+    </nav>
+
+    <div class="main_body flex">
+        <div class="sidebar_left">
+            <div class="line_one flex">
+                <div>
+                    <p>Your Library</p>
+                </div>
+                <ul class="flex">
+                    <li><button class="create_element flex"><img class="line_one_create flex filter" src="plus.svg"
+                                alt=""> Create</button></li>
+                    <li><button class="expand_element"><img class="expand_icon" src="expand.svg" alt=""></button></li>
+                </ul>
+            </div>
+            <div class="line_two">
+                <ul class="flex">
+                    <li>Playlist</li>
+                    <li>Artist</li>
+                    <li>Albums</li>
+                </ul>
+            </div>
+            <br><br>
+            <div class="line_3 flex">
+                <button class="search_l3"><img src="search.svg" alt=""></button>
+                <button class="recents flex"><span>Recents</span><img class="menu" src="menu_oprion.svg"
+                        alt=""></button>
+            </div>
+            <br><br><br>
+            <div class="playlists flex">
+                <div class="playlist"><img class="Thumbnail" src="" alt="thumbnail">Playlist</div>
+                <div class="playlist"><img class="Thumbnail" src="" alt="thumbnail">Playlist</div>
+                <div class="playlist"><img class="Thumbnail" src="" alt="thumbnail">Playlist</div>
+                <div class="playlist"><img class="Thumbnail" src="" alt="thumbnail">Playlist</div>
+                <div class="playlist"><img class="Thumbnail" src="" alt="thumbnail">Playlist</div>
+                <div class="playlist"><img class="Thumbnail" src="" alt="thumbnail">Playlist</div>
+                <div class="playlist"><img class="Thumbnail" src="" alt="thumbnail">Playlist</div>
+                <div class="playlist"><img class="Thumbnail" src="" alt="thumbnail">Playlist</div>
+                <div class="playlist"><img class="Thumbnail" src="" alt="thumbnail">Playlist</div>
+                <div class="playlist"><img class="Thumbnail" src="" alt="thumbnail">Playlist</div>
+                <div class="playlist"><img class="Thumbnail" src="" alt="thumbnail">Playlist</div>
+            </div>
+        </div>
+        <div class="right_box flex">
+            <div class="r_line_1">
+                <ul class="flex">
+                    <li>All</li>
+                    <li>Music</li>
+                    <li>Podcasts</li>
+                </ul>
+            </div>
+
+            <div class="r_line_2 flex">
+                <div class="player"><img class="Thumbnail" src="" alt="thumbnail">Song</div>
+                <div class="player"><img class="Thumbnail" src="" alt="thumbnail">Song</div>
+            </div>
+            <br><br><br>
+            <div class="header_songs flex">
+                <div class="started flex"><b>Getting Started</b>
+                    <ul class="flex">
+                        <li> <button class="left_arrow"><img class="arrow" src="left_arrow.svg" alt=""></button></li>
+                        <li><button class="right_arrow"><img class="arrow" src="right_arrow.svg" alt=""></button></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="content-sections">
+                <div class="section">
+                    <div class="section-header flex">
+                        <h2>Made for you</h2>
+                        <button class="show-all">Show all</button>
+                    </div>
+                    <div class="cards-grid">
+                        <div class="music-card">
+                            <div class="card-image discover-weekly">DW</div>
+                            <h3>Discover Weekly</h3>
+                            <p>Your weekly mixtape of fresh music</p>
+                        </div>
+                        <div class="music-card">
+                            <div class="card-image release-radar">RR</div>
+                            <h3>Release Radar</h3>
+                            <p>Catch all the latest music from artists you follow</p>
+                        </div>
+                        <div class="music-card">
+                            <div class="card-image daily-mix">DM1</div>
+                            <h3>Daily Mix 1</h3>
+                            <p>Pop, Ed Sheeran, Dua Lipa and more</p>
+                        </div>
+                        <div class="music-card">
+                            <div class="card-image daily-mix">DM2</div>
+                            <h3>Daily Mix 2</h3>
+                            <p>Rock, Imagine Dragons, OneRepublic and more</p>
+                        </div>
+                        <div class="music-card">
+                            <div class="card-image repeat-rewind">RW</div>
+                            <h3>Repeat Rewind</h3>
+                            <p>Songs you loved and might want to hear again</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-header flex">
+                        <h2>Recently played</h2>
+                        <button class="show-all">Show all</button>
+                    </div>
+                    <div class="cards-grid">
+                        <div class="music-card">
+                            <div class="card-image album1">A1</div>
+                            <h3>Liked Songs</h3>
+                            <p>457 songs</p>
+                        </div>
+                        <div class="music-card">
+                            <div class="card-image album2">A2</div>
+                            <h3>Pop Hits</h3>
+                            <p>The biggest pop songs right now</p>
+                        </div>
+                        <div class="music-card">
+                            <div class="card-image album3">A3</div>
+                            <h3>Chill Vibes</h3>
+                            <p>Relax and unwind with these chill tracks</p>
+                        </div>
+                        <div class="music-card">
+                            <div class="card-image album4">A4</div>
+                            <h3>Workout Mix</h3>
+                            <p>High energy songs for your workout</p>
+                        </div>
+                        <div class="music-card">
+                            <div class="card-image album5">A5</div>
+                            <h3>Indie Rock</h3>
+                            <p>The best in indie rock music</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-header flex">
+                        <h2>Popular playlists</h2>
+                        <button class="show-all">Show all</button>
+                    </div>
+                    <div class="cards-grid">
+                        <div class="music-card">
+                            <div class="card-image today-hits">TH</div>
+                            <h3>Today's Top Hits</h3>
+                            <p>The hottest 50 songs on Spotify</p>
+                        </div>
+                        <div class="music-card">
+                            <div class="card-image global50">G50</div>
+                            <h3>Global Top 50</h3>
+                            <p>Your daily update of the most played tracks</p>
+                        </div>
+                        <div class="music-card">
+                            <div class="card-image viral50">V50</div>
+                            <h3>Viral 50</h3>
+                            <p>The most viral tracks on Spotify</p>
+                        </div>
+                        <div class="music-card">
+                            <div class="card-image rapCaviar">RC</div>
+                            <h3>RapCaviar</h3>
+                            <p>New music from Drake, Travis Scott and more</p>
+                        </div>
+                        <div class="music-card">
+                            <div class="card-image rock-this">RT</div>
+                            <h3>Rock This</h3>
+                            <p>The biggest rock anthems</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Player Bar -->
+    <!-- <div class="player-bar">
+        <div class="player-left flex">
+            <div class="current-track-image">🎵</div>
+            <div class="current-track-info">
+                <div class="track-name">Song Name</div>
+                <div class="artist-name">Artist Name</div>
+            </div>
+            <button class="heart-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+            </button>
+        </div> -->
+
+    <!-- <div class="player-center">
+            <div class="player-controls flex">
+                <button class="control-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/>
+                    </svg>
+                </button>
+                <button class="control-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/>
+                    </svg>
+                </button>
+                <button class="play-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M8 5v14l11-7z"/>
+                    </svg>
+                </button>
+                <button class="control-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M6 18V6h2v12H6zM9.5 12l8.5 6V6l-8.5 6z"/>
+                    </svg>
+                </button>
+                <button class="control-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18 6v12h-2V6h2zM14.5 12L6 6v12l8.5-6z"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="progress-bar">
+                <span class="time-elapsed">0:00</span>
+                <div class="progress-track">
+                    <div class="progress-fill"></div>
+                </div>
+                <span class="time-total">3:45</span>
+            </div>
+        </div>
+
+        <div class="player-right flex">
+            <button class="volume-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/>
+                </svg>
+            </button>
+            <div class="volume-bar">
+                <div class="volume-fill"></div>
+            </div>
+        </div>
+    </div>
+            
+        </div>
+    </div> -->
+    <div class="player-controls flex">
+        <div class="control-buttons flex">
+            <button class="control-btn" id="shuffleBtn">
+                <svg class="icon" viewBox="0 0 16 16">
+                    <path
+                        d="M13.151.922a.75.75 0 1 0-1.06 1.06L13.109 3H11.16a3.75 3.75 0 0 0-2.873 1.34l-6.173 7.356A2.25 2.25 0 0 1 .39 12.5H0V14h.391a3.75 3.75 0 0 0 2.873-1.34l6.173-7.356a2.25 2.25 0 0 1 1.724-.804h1.947l-1.017 1.018a.75.75 0 0 0 1.06 1.06L15.98 3.75 13.151.922zM.391 3.5H0V2h.391c1.109 0 2.16.49 2.873 1.34L4.89 5.277l-.979 1.167-1.796-2.14A2.25 2.25 0 0 0 .39 3.5zm7.5 10.91l.979-1.167-1.796-2.14A2.25 2.25 0 0 0 5.348 10H3.5V8.5h1.848a3.75 3.75 0 0 1 2.873 1.34l1.67 1.99z" />
+                </svg>
+            </button>
+
+            <button class="control-btn">
+                <svg class="icon" viewBox="0 0 16 16">
+                    <path
+                        d="M3.3 1a.7.7 0 0 1 .7.7v5.15l9.95-5.744a.7.7 0 0 1 1.05.606v12.588a.7.7 0 0 1-1.05.606L4 8.149V13.3a.7.7 0 0 1-.7.7H1.7a.7.7 0 0 1-.7-.7V1.7a.7.7 0 0 1 .7-.7h1.6z" />
+                </svg>
+            </button>
+
+            <button class="control-btn play-btn" id="playBtn">
+                <svg class="icon icon-large" viewBox="0 0 16 16" id="playIcon">
+                    <path
+                        d="m3 1.713a.7.7 0 0 1 1.05-.607l10.89 6.288a.7.7 0 0 1 0 1.212L4.05 14.894A.7.7 0 0 1 3 14.287V1.713z" />
+                </svg>
+                <svg class="icon icon-large" viewBox="0 0 16 16" id="pauseIcon" style="display: none;">
+                    <path
+                        d="M2.7 1a.7.7 0 0 0-.7.7v12.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V1.7a.7.7 0 0 0-.7-.7H2.7zm8 0a.7.7 0 0 0-.7.7v12.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V1.7a.7.7 0 0 0-.7-.7h-2.6z" />
+                </svg>
+            </button>
+
+            <button class="control-btn">
+                <svg class="icon" viewBox="0 0 16 16">
+                    <path
+                        d="M12.7 1a.7.7 0 0 0-.7.7v5.15L2.05 1.107A.7.7 0 0 0 1 1.712v12.588a.7.7 0 0 0 1.05.606L12 8.149V13.3a.7.7 0 0 0 .7.7h1.6a.7.7 0 0 0 .7-.7V1.7a.7.7 0 0 0-.7-.7h-1.6z" />
+                </svg>
+            </button>
+
+            <button class="control-btn" id="repeatBtn">
+                <svg class="icon" viewBox="0 0 16 16">
+                    <path
+                        d="M0 4.75A3.75 3.75 0 0 1 3.75 1h8.5A3.75 3.75 0 0 1 16 4.75v5a3.75 3.75 0 0 1-3.75 3.75H9.81l1.018 1.018a.75.75 0 1 1-1.06 1.06L6.939 12.75l2.829-2.828a.75.75 0 1 1 1.06 1.06L9.811 12h2.439a2.25 2.25 0 0 0 2.25-2.25v-5a2.25 2.25 0 0 0-2.25-2.25h-8.5A2.25 2.25 0 0 0 1.5 4.75v5A2.25 2.25 0 0 0 3.75 12H5v1.5H3.75A3.75 3.75 0 0 1 0 9.75v-5z" />
+                </svg>
+            </button>
+
+
+            <!-- <div class="progress-container flex">
+                <span class="time-display" id="currentTime">0:00</span>
+                <div class="progress-bar" id="progressBar">
+                    <div class="progress-fill" id="progressFill">
+                        <div class="progress-handle"></div>
+                    </div>
+                </div>
+                <span class="time-display" id="duration">3:30</span>
+            </div>
+        </div>
+    </div> -->
+
+            <!-- Right Section - Volume & Extra Controls -->
+            <div class="right-controls flex">
+                <div class="extra-controls">
+                    <button class="control-btn">
+                        <svg class="icon" viewBox="0 0 16 16">
+                            <path
+                                d="M6 2.75C6 1.784 6.784 1 7.75 1h6.5c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0 1 14.25 15h-6.5A1.75 1.75 0 0 1 6 13.25V2.75zm1.75-.25a.25.25 0 0 0-.25.25v10.5c0 .138.112.25.25.25h6.5a.25.25 0 0 0 .25-.25V2.75a.25.25 0 0 0-.25-.25h-6.5zm-5.025.718a2.25 2.25 0 0 1 2.525.565A.75.75 0 0 1 4.188 4.84 .75.75 0 0 0 3.22 5.25H.75a.75.75 0 0 1 0-1.5h2.47c-.176-.316-.176-.694 0-1.032z" />
+                        </svg>
+                    </button>
+
+                    <button class="control-btn">
+                        <svg class="icon" viewBox="0 0 16 16">
+                            <path
+                                d="M15 15H1v-1.5h14V15zm0-4.5H1V9h14v1.5zm-14-7A2.5 2.5 0 0 1 3.5 1h9A2.5 2.5 0 0 1 15 3.5v2A2.5 2.5 0 0 1 12.5 8h-9A2.5 2.5 0 0 1 1 5.5v-2zm1.5 0v2a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1h-9a1 1 0 0 0-1 1z" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="volume-container">
+                    <button class="control-btn" id="volumeBtn">
+                        <!-- <svg class="icon" viewBox="0 0 16 16" id="muteIcon" style="display: none;">
+                    <path
+                        d="M13.86 5.47a.75.75 0 0 0-1.061 0l-1.47 1.47-1.47-1.47A.75.75 0 0 0 8.8 6.53L10.269 8l-1.47 1.47a.75.75 0 1 0 1.061 1.06l1.47-1.47 1.47 1.47a.75.75 0 0 0 1.06-1.06L12.39 8l1.47-1.47a.75.75 0 0 0 0-1.06z" />
+                    <path
+                        d="M10.116 1.5A.75.75 0 0 1 11.25 2.25v11.5a.75.75 0 0 1-1.125.65L7.116 13.2H4.25a.75.75 0 0 1-.75-.75v-9a.75.75 0 0 1 .75-.75h2.866L10.116 1.5z" />
+                </svg> -->
+                    </button>
+                    <div class="volume-bar" id="volumeBar">
+                        <div class="volume-fill" id="volumeFill">
+                            <div class="volume-handle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="seekbar">
+                <div class="circle">
+
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
